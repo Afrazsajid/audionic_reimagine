@@ -1,17 +1,23 @@
 /* 
 /* for mobile */
-@media only screen and (max-width:480px)  {
-
-  
-    .image-div{
-        min-width: 380px;
-        
-    }
-
-    #vert3,#vert1 {
-        transform: translateY(-245vh);
-      }
+@media only screen and (max-width: 645px) {
+  .image-div {
+    min-width: 380px;
   }
-  html{
+
+  #vert3,
+  #vert1 {
+    transform: translateY(-245vh);
+  }
+  html {
     font-size: 10px;
-  } 
+  }
+  
+  /* .mainhead h1 {
+    font-size: 2rem;
+  }
+  .mainhead h5 {
+    font-size: 1.2rem;
+  } */
+  
+}
