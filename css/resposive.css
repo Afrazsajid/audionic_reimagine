@@ -1,0 +1,17 @@
+/* 
+/* for mobile */
+@media only screen and (max-width:480px)  {
+
+  
+    .image-div{
+        min-width: 380px;
+        
+    }
+
+    #vert3,#vert1 {
+        transform: translateY(-245vh);
+      }
+  }
+  html{
+    font-size: 10px;
+  } 

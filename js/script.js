@@ -8,8 +8,9 @@ function scrollingeffect(tl) {
             return -770;// Second element moves down
 
         },
-        duration: 1.2,
-        opacity:1
+        duration: 1.4,
+        opacity:1,
+        ease: "power1.out"
         // Stagger the animations by 0.5 seconds
     });
 }
@@ -19,6 +20,7 @@ function textanimate(tl) {
         scale:0,
         opacity:1,
         duartion:1,
+
         
 
         
@@ -34,6 +36,7 @@ function firstpageani() {
 }
 
 document.addEventListener("DOMContentLoaded", function(){
+
     firstpageani()
   });
 
