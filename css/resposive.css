@@ -1,6 +1,9 @@
 /* 
-/* for mobile */
-@media only screen and (max-width: 645px) {
+/* for tablet*/
+@media only screen and (max-width: 655px) {
+  .navItemContainer{
+    display: none;
+  }
   .image-div {
     min-width: 380px;
   }
@@ -13,11 +16,26 @@
     font-size: 10px;
   }
   
-  /* .mainhead h1 {
-    font-size: 2rem;
+  
+}
+
+/* for mobile  */
+@media only screen and (max-width: 394px) {
+
+  .image-div {
+    min-width: 78vw;
   }
-  .mainhead h5 {
-    font-size: 1.2rem;
-  } */
+  .mainhead{
+    font-size: 8px;
+  }
+
+  #vert3,
+  #vert1 {
+    transform: translateY(-245vh);
+  }
+
+
+
+  
   
 }

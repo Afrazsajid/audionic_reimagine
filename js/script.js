@@ -36,8 +36,13 @@ function firstpageani() {
 }
 
 document.addEventListener("DOMContentLoaded", function(){
+    gsap.to("#main",{
+        opacity:1,
+        duartion:1.1
+    })
 
     firstpageani()
+    
   });
 
 
