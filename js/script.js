@@ -37,7 +37,7 @@ function firstpageani() {
         scrollTrigger: {
             trigger: '#page1',
 
-            start: "10% top",
+            start: "top top",
 
 
 
