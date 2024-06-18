@@ -29,7 +29,7 @@
   width: 100%;
   height: 100vh;
 }
-.columns-cont{
+.columns-cont {
   display: flex;
   gap: 12px;
 }
@@ -53,11 +53,9 @@
   width: 90%;
   height: auto;
 }
-.image-div div{
+.image-div div {
   width: 100%;
 }
-
-
 
 Video {
   width: 100%;
@@ -67,11 +65,11 @@ Video {
   vertical-align: middle;
 }
 
-
-#vert3,#vert1 {
+#vert3,
+#vert1 {
   transform: translateY(-280vh);
 }
-#vert2{
+#vert2 {
   transform: translateY(280vh);
 }
 
@@ -90,8 +88,6 @@ Video {
 }
 
 .navItemContainer {
-
-
   right: 0;
   top: 0;
   display: flex;
@@ -133,7 +129,7 @@ Video {
 
 .mainhead {
   width: 100%;
-   height: calc(100vh - 80px); /*here 80px is height of nav */
+  height: calc(100vh - 80px); /*here 80px is height of nav */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,22 +137,16 @@ Video {
   gap: 10px;
 }
 
-
-
-.mainhead h1{
+.mainhead h1 {
   font-size: 9em;
   line-height: 1;
-  
 }
-.mainhead h5{
+.mainhead h5 {
   font-size: 2.1em;
-  font-weight:400;
-
+  font-weight: 400;
 }
 
 .mainpage button {
-
-
   cursor: pointer;
   padding: 0.9em 1.4em;
   min-width: 120px;
@@ -169,8 +159,8 @@ Video {
   background-image: linear-gradient(
     325deg,
     rgb(255, 35, 35) 0%,
-    rgb(190, 76, 76)55%,
-    rgb(224, 26, 26)90%
+    rgb(190, 76, 76) 55%,
+    rgb(224, 26, 26) 90%
   );
   border: none;
   border-radius: 0.5em;
@@ -180,3 +170,70 @@ Video {
     inset 4px 4px 8px rgba(255, 175, 175, 0.5),
     inset -4px -4px 8px rgba(216, 19, 19, 0.35);
 }
+
+/* for page 2 */
+#page2{
+  height: 100vh;
+  background-color: red;
+  
+}
+#page2 .roundwrraper {
+  width: 100%;
+  height: 100px;
+ 
+  position: relative;
+  overflow: hidden;
+
+
+
+
+
+
+ 
+  opacity: 1;
+
+
+
+}
+.rounddiv {
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  border-radius: 50%;
+  height: 250px;
+  background-color: rgb(0, 0, 0);
+  margin-top: -100px;
+  
+}
+
+#page2 {
+  position: relative;
+  
+}
+h2{
+  white-space: nowrap;
+  font-size: 3rem;
+  padding-left: 21px;
+ 
+
+}
+.h2cont{
+  max-width: 300px;
+}
+.h2cont h2:nth-child(2){
+  color: rgb(98, 98, 98);
+}
+
+
+.reveal{
+  width:0;
+ 
+  overflow: hidden;
+  /* position: relative; */
+  position: absolute;
+
+  z-index: 78;
+  
+}
+
+
