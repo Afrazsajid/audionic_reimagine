@@ -184,8 +184,6 @@ Video {
   overflow: hidden;
   opacity: 1;
 
-
-
 }
 .rounddiv {
   position: absolute;
@@ -232,10 +230,6 @@ Video {
   width: 100%;
   color: white;
   display: flex;
-  z-index: 9999999999999999;
-
-
-
 }
 
 .left {
@@ -248,7 +242,7 @@ Video {
 }
 
 .left h2 {
-  font-size: 4.5rem;
+  font-size: 4.5vw;
   align-self: center;
   line-height: 0.9;
   margin-bottom: 15px;
@@ -256,7 +250,7 @@ Video {
 }
 
 .left h3 {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-weight: 400;
   line-height: 0.9;
 
@@ -282,13 +276,15 @@ Video {
 
 
 .product button {
-  margin: 25px 200px;
+  position: relative;
+  top: 90%;
+  left: 48%;
+  transform: translate(-50%, -50%);
   cursor: pointer;
   padding: 0.9em 1.4em;
-  min-width: 200px;
-  min-height: 44px;
-  font-size: 1.1rem;
-
+  min-width: 16vw;
+  min-height: 3vw;
+  font-size: 1.1vw;
   font-weight: 500;
   transition: 0.8s;
   background-size: 280% auto;
@@ -316,6 +312,7 @@ Video {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   left: -23%;
+  z-index: 1;
 
 }
 
@@ -324,28 +321,34 @@ Video {
 }
 
 .product-bar h3 {
-  font-size: 3.5rem;
+  font-size: 3vw;
+  padding-left: 20px;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
 }
 
 .cross-icon {
-  height: 40px;
-  margin: 20px;
+  height: 2.5vw;
+  position: absolute; 
+  right: 10%;
+  top: 20%; 
   cursor: pointer;
 
 }
 
 .bar_div {
-  margin: 150px 0;
+ position: relative;
+ top: 37%;
+ left: 50%;
+ transform: translate(-50%, -50%);
 }
 
 .product-bar h1 {
   font-weight: 500;
-  font-size: 2.9rem;
+  font-size: 2.5vw;
   line-height: 2;
-  margin-left: 20px;
+  padding-left: 20px;
   text-transform: uppercase;
   cursor: pointer;
 
@@ -360,7 +363,7 @@ Video {
   width: 100%;
   background-color: rgb(0, 0, 0);
   position: absolute;
-  margin-top: 100vh;
+  margin-top: 200vh;
   top: -100%;
   overflow: hidden;
   display: flex;
@@ -479,7 +482,7 @@ p{
   border: none;
   cursor: pointer;
   color: #ffeba7;
-  margin-right: 10px;
+  margin-right: 7px;
   /* box-shadow: 0 12px 35px 0 rgba(255, 255, 255, 0.062); */
   z-index: 10;
   background-position: center;
@@ -690,7 +693,9 @@ label.color-5{
   position: relative;
   display: inline-block;
   margin-right: 20px;
+  width: 40px;
 }
+
 .section-inline p span{
   font-size: 26px;
   line-height: 1.1;
@@ -928,98 +933,7 @@ label.color-23{
 }
 
 
-@media screen and (max-width: 991px) {
-  .product-background{
-    height: 90vh;
 
-  }
-  .section{
-    margin: 0 auto;
-    text-align: center;
-    max-width: calc(100% - 40px);
-    width: 370px;
-  }
-  label.first-color{
-    margin-left: 0;
-  }
-  .info-wrap{
-    margin-left: 0;
-    width: 370px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .close_products {
-    height: 30px;
-    position: absolute;
-    right: -10%;
-    top: -90%;
-  
-  }
-  .info-wrap .btn{
-    margin-top: 10px;
-    height: 40px;
-    width: 190px;
-    font-size: 12px;
-  }
-  .img-wrap{
-    width: 300px;
-    height: 295px;
-    left: 10%;
-    top:2%;
-  }
-  .mob-margin {
-    margin-top: 250px;
-  }
-  .desc-btn:checked + label,
-  .desc-btn:not(:checked) + label{
-    margin-right: 15px;
-    margin-left: 15px;
-  }
-
-  .color-btn:checked + label,
-  .color-btn:not(:checked) + label{
-    height: 35px;
-    width: 35px;
-    margin: 5px auto;
-    margin-top: 0;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  .section-inline{
-    margin: 0 5px;
-  }
-
-}
-
-@media screen and (max-width: 575px) {
-  .section{
-    width: 280px;
-  }
-  .info-wrap{
-    width: 280px;
-  }
-  .img-wrap{
-    left: 2%;
-  }
-  .color-btn:checked + label,
-  .color-btn:not(:checked) + label{
-    height: 30px;
-    width: 30px;
-  }
-  .section-inline p span{
-    font-size: 24px;
-    line-height: 1.1;
-  }
-  .section-inline p{
-    font-size: 14px;
-  }
-  .section h5{
-    margin-top: -20px;
-  }
-  .close_products{
-    margin-right: 10px;
-  }
-}
 
 
 

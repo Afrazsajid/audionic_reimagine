@@ -1,6 +1,6 @@
-/* 
+
 /* for tablet*/
-@media only screen and (max-width: 655px) {
+@media only screen and (max-width: 685px) {
   .navItemContainer{
     display: none;
   }
@@ -42,4 +42,94 @@
 
   
   
+}
+
+/* page 2 */
+
+@media screen and (max-width: 1040px) {
+  .product-background{
+    height: 90vh;
+
+  }
+  .section{
+    margin: 0 auto;
+    text-align: center;
+    max-width: calc(100% - 40px);
+    width: 370px;
+  }
+  label.first-color{
+    margin-left: 0;
+  }
+  
+  .info-wrap{
+    margin-left: 0;
+    width: 370px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .close_products {
+    height: 30px;
+    position: absolute;
+    right: -10%;
+    top: -90%;
+  
+  }
+  .info-wrap .btn{
+    margin-top: 10px;
+    height: 40px;
+    width: 190px;
+    font-size: 12px;
+  }
+  .img-wrap{
+    width: 300px;
+    height: 295px;
+    left: 10%;
+    top:2%;
+  }
+  .mob-margin {
+    margin-top: 250px;
+  }
+  .desc-btn:checked + label,
+  .desc-btn:not(:checked) + label{
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .color-btn:checked + label,
+  .color-btn:not(:checked) + label{
+    margin: 5px auto;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .section-inline{
+    margin: 0 10px;
+  }
+
+}
+
+@media screen and (max-width: 575px) {
+  .section{
+    width: 280px;
+  }
+  .info-wrap{
+    width: 280px;
+  }
+  .img-wrap{
+    left: 2%;
+  }
+
+  .section-inline p span{
+    font-size: 24px;
+    line-height: 1.1;
+  }
+  .section-inline p{
+    font-size: 14px;
+  }
+  .section h5{
+    margin-top: -20px;
+  }
+  .close_products{
+    margin-right: 10px;
+  }
 }
