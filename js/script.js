@@ -174,14 +174,13 @@ window.onload = function () {
 
 function showproductbar() {
     const barplay = document.getElementById("product")
-    const barpause = document.querySelector(".cross-icon")
+    const barreverse = document.querySelector(".cross-icon")
+
     const bar = gsap.timeline()
     bar.to(".product-bar", {
         left: 0,
         duration: 0.8,
         ease: "ease-in",
-
-
     })
 
     bar.from(".icon-div", {
@@ -201,12 +200,14 @@ function showproductbar() {
 
     barplay.addEventListener('click', function () {
         bar.play()
+        
     })
 
 
-    barpause.addEventListener('click', function () {
+    barreverse.addEventListener('click', function () {
         bar.reverse()
     })
+
 }
 showproductbar()
 

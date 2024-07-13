@@ -1,6 +1,6 @@
-/* 
+
 /* for tablet*/
-@media only screen and (max-width: 655px) {
+@media only screen and (max-width: 685px) {
   .navItemContainer{
     display: none;
   }
@@ -44,8 +44,14 @@
   
 }
 
+<<<<<<< HEAD
 
 @media screen and (max-width: 991px) {
+=======
+/* page 2 */
+
+@media screen and (max-width: 1040px) {
+>>>>>>> aeb2de2ef9423d01ccd94238f7b2108d973e9818
   .product-background{
     height: 90vh;
 
@@ -59,6 +65,10 @@
   label.first-color{
     margin-left: 0;
   }
+<<<<<<< HEAD
+=======
+  
+>>>>>>> aeb2de2ef9423d01ccd94238f7b2108d973e9818
   .info-wrap{
     margin-left: 0;
     width: 370px;
@@ -95,15 +105,22 @@
 
   .color-btn:checked + label,
   .color-btn:not(:checked) + label{
+<<<<<<< HEAD
     height: 35px;
     width: 35px;
+=======
+>>>>>>> aeb2de2ef9423d01ccd94238f7b2108d973e9818
     margin: 5px auto;
     margin-top: 0;
     margin-bottom: 10px;
     text-align: center;
   }
   .section-inline{
+<<<<<<< HEAD
     margin: 0 5px;
+=======
+    margin: 0 10px;
+>>>>>>> aeb2de2ef9423d01ccd94238f7b2108d973e9818
   }
 
 }
@@ -118,11 +135,15 @@
   .img-wrap{
     left: 2%;
   }
+<<<<<<< HEAD
   .color-btn:checked + label,
   .color-btn:not(:checked) + label{
     height: 30px;
     width: 30px;
   }
+=======
+
+>>>>>>> aeb2de2ef9423d01ccd94238f7b2108d973e9818
   .section-inline p span{
     font-size: 24px;
     line-height: 1.1;
@@ -136,8 +157,12 @@
   .close_products{
     margin-right: 10px;
   }
+<<<<<<< HEAD
 }
 
 
 
 
+=======
+}
+>>>>>>> aeb2de2ef9423d01ccd94238f7b2108d973e9818
