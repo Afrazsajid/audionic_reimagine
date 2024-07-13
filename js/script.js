@@ -42,7 +42,7 @@ function firstpageani() {
 
 
             scrub: true,
-            pin:true
+            pin: true
 
 
 
@@ -52,12 +52,12 @@ function firstpageani() {
 
 
 
-    tl2.staggerTo(["#vert2","#vert1","#vert3"],8, {
+    tl2.staggerTo(["#vert2", "#vert1", "#vert3"], 8, {
         y: "-200vh", // move div1 100px to the right
         y: "-199vh", // move div2 100px up
         y: "0", // move div3 100px to the left
         stagger: 0.1 // add a 0.1 second delay between each animation
-      });
+    });
 
 }
 
@@ -72,7 +72,7 @@ function firstpageani() {
 //             start: "-40% top",
 //             end: "120px top",
 //             scrub: 2,
-       
+
 //         }
 //     })
 
@@ -82,11 +82,11 @@ function firstpageani() {
 //             start: "top top",
 //             end:"30% top",
 //             pin:true,
-            
-       
-            
+
+
+
 //             scrub: 2,
-   
+
 //         }
 //     })
 
@@ -99,7 +99,7 @@ function firstpageani() {
 
 //     });
 
- 
+
 
 //     tl.to("#page2", {
 //         backgroundColor: "black",
@@ -110,16 +110,36 @@ function firstpageani() {
 //     tl2.to("#reveal",{
 //         width:"28%",
 //        ease: "power3.out",
-     
-    
+
+
 //     })
 
-    
 
-  
 
-    
+
+
+
 // }
+
+
+function pagethirdani() {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '#page3',
+        start: "top top",
+        end: "30% top", // changed from "150% 150%" to "bottom bottom"
+        pin: true,
+        markers: true,
+        scrub: 2,
+        toggleActions: "play complete reverse reset", // added this line
+        onUpdate: (self) => write(self.progress)
+      }
+    })
+    tl.to("#page3black", {
+      width: "100vw"
+    })
+  
+}
 
 
 
@@ -131,6 +151,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     firstpageani()
     secondpageani()
+    pagethirdani()
+    showall()
+    
 
 
 
@@ -139,17 +162,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 });
-window.onload = function() {
+window.onload = function () {
     console.log(0)
 
     lenis.scrollTo({
         y: 0, // scroll to the top of the page (y-coordinate 0)
-      // optional, but you can add a duration for the scroll animation
-      }); // scroll to the top of the page
-  }
+        // optional, but you can add a duration for the scroll animation
+    }); // scroll to the top of the page
+}
 
 
-  function showproductbar() {
+function showproductbar() {
     const barplay = document.getElementById("product")
     const barpause = document.querySelector(".cross-icon")
     const bar = gsap.timeline()
@@ -209,7 +232,7 @@ function movingobject() {
 movingobject()
 
 
-function airpodsplay(){
+function airpodsplay() {
     const show_airpods = gsap.timeline()
     show_airpods.to("#product_airpods", {
         top: 0,
@@ -221,7 +244,8 @@ function airpodsplay(){
     show_airpods.to(".page2inner", {
         duration: 0.6,
         ease: "linear",
-        opacity: 0,
+        display: "none"
+
 
     }, "a")
 
@@ -236,7 +260,7 @@ function airpodsplay(){
     })
 
 }
-function airpodsreverse(){
+function airpodsreverse() {
     const show_airpods = gsap.timeline()
     show_airpods.to(".product-background", {
         duration: 0.6,
@@ -245,27 +269,28 @@ function airpodsreverse(){
     },)
     show_airpods.to(".product-background", {
         scale: 1.2,
-    },"b")
+    }, "b")
     show_airpods.to(".blur-icon", {
         scale: 0,
 
-    },"b")
+    }, "b")
     show_airpods.to("#product_airpods", {
         top: -1000,
         duration: 1,
         opacity: 0
-    
+
     }, "a")
-    
+
     show_airpods.to(".page2inner", {
         duration: 0.7,
         ease: "linear",
-        opacity: 1,
-    
+        display: "block"
+
+
     }, "a")
 
 }
-function speakersplay(){
+function speakersplay() {
     const show_speakers = gsap.timeline()
     show_speakers.to("#product_speakers", {
         top: 0,
@@ -292,7 +317,7 @@ function speakersplay(){
     })
 
 }
-function speakersreverse(){
+function speakersreverse() {
     const show_speakers = gsap.timeline()
     show_speakers.to(".product-background", {
         duration: 0.6,
@@ -301,27 +326,27 @@ function speakersreverse(){
     },)
     show_speakers.to(".product-background", {
         scale: 1.2,
-    },"b")
+    }, "b")
     show_speakers.to(".blur-icon", {
         scale: 0,
 
-    },"b")
+    }, "b")
     show_speakers.to("#product_speakers", {
         top: -1000,
         duration: 1,
         opacity: 0
-    
+
     }, "a")
-    
+
     show_speakers.to(".page2inner", {
         duration: 0.7,
         ease: "linear",
         opacity: 1,
-    
+
     }, "a")
 
 }
-function powerbanksplay(){
+function powerbanksplay() {
     const show_powerbank = gsap.timeline()
     show_powerbank.to("#product_powerbanks", {
         top: 0,
@@ -348,7 +373,7 @@ function powerbanksplay(){
     })
 
 }
-function powerbanksreverse(){
+function powerbanksreverse() {
     const show_powerbank = gsap.timeline()
     show_powerbank.to(".product-background", {
         duration: 0.6,
@@ -357,23 +382,23 @@ function powerbanksreverse(){
     },)
     show_powerbank.to(".product-background", {
         scale: 1.2,
-    },"b")
+    }, "b")
     show_powerbank.to(".blur-icon", {
         scale: 0,
 
-    },"b")
+    }, "b")
     show_powerbank.to("#product_powerbanks", {
         top: -1000,
         duration: 1,
         opacity: 0
-    
+
     }, "a")
-    
+
     show_powerbank.to(".page2inner", {
         duration: 0.7,
         ease: "linear",
         opacity: 1,
-    
+
     }, "a")
 
 }
@@ -387,7 +412,7 @@ function showall() {
     const powerbanks = document.querySelector(".powerbanks")
     const closepowerbanks = document.querySelector("#close-powerbanks")
 
-    
+
     // AIRPODS
     airpods.addEventListener('click', function () {
         airpodsplay();
@@ -399,7 +424,7 @@ function showall() {
     // SPEAKERS
     speakers.addEventListener('click', function () {
         speakersplay();
-    })    
+    })
     closespeakers.addEventListener('click', function () {
         speakersreverse();
     })
@@ -407,12 +432,12 @@ function showall() {
     // POWERBANKS
     powerbanks.addEventListener('click', function () {
         powerbanksplay();
-    })    
+    })
     closepowerbanks.addEventListener('click', function () {
         powerbanksreverse();
     })
 }
-showall()
+
 
 
 
